@@ -1,5 +1,5 @@
 
 $(document).ready(function () {
     $("#main").addClass("clearfix");
-    $("#main div").addClass("container text-center");
+    $("#main div").addClass("container foreground");
 });

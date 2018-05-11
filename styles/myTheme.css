@@ -1,0 +1,35 @@
+body {
+    font-family: 'Overpass Mono';
+    background-color: #202020;
+    color: whitesmoke;
+}
+
+#header {
+    width: 100%;
+    padding: 1%;
+    background: no-repeat linear-gradient(black, blue);
+    border-bottom: 2px ridge;
+    margin-bottom: 2%;
+}
+    #header #name{
+            margin: 0px;
+    }
+
+::after{
+    display:block;
+    clear:both;
+    margin:2%;
+}
+
+.foreground {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: -2px 0px 0px rgb(0, 255, 255)
+            , 2px 2px 0px rgb(12, 12, 12);
+    background-color: #313131;
+    color: whitesmoke;
+}
+    .foreground:hover {
+        box-shadow: -2px 0px 0px rgb(255, 0, 255)
+                , 2px 2px 0px rgb(12, 12, 12);
+    }
