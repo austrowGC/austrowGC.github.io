@@ -1,12 +1,12 @@
 body {
-    background-color: #202020;
+    background: #202020;
     color: whitesmoke;
 }
 
 .menu {
     width: 50%;
     padding: 1%;
-    background: no-repeat linear-gradient(black, blue);
+    background: no-repeat linear-gradient(#000000, #0F6464);
     border: 4px ridge;
     border-radius: 4px;
     margin-bottom: 2%;
@@ -38,10 +38,9 @@ body {
 
     #options li {
             font-size: 28px;
-            line-height: 28px;
     }
 
-    #options li:hover {
+    #options li:hover, #options li:focus {
             list-style: url(../Content/pointerSmall.png);
     }
 
@@ -76,7 +75,7 @@ a{
     color: inherit;
     font-style: inherit;
 }
-    a:hover{
+    a:hover, a:focus{
         color: inherit;
         text-decoration: inherit;
     }
