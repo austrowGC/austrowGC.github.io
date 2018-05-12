@@ -1,18 +1,52 @@
 body {
-    font-family: 'Overpass Mono';
     background-color: #202020;
     color: whitesmoke;
 }
 
-#header {
-    width: 100%;
+.menu {
+    width: 50%;
     padding: 1%;
     background: no-repeat linear-gradient(black, blue);
-    border-bottom: 2px ridge;
+    border: 4px ridge;
+    border-radius: 4px;
     margin-bottom: 2%;
+    font-family: 'Overpass Mono';
+    text-shadow: 2px 2px black;
 }
-    #header #name{
-            margin: 0px;
+
+.submenu{
+    float:right;
+}
+
+#header {
+    width: 100%;
+    overflow: auto;
+}
+    #header h1 {
+        margin: none;
+    }
+
+#title{
+    width: 50%;
+    float: left;
+    position: absolute;
+}
+
+#options ul{
+    list-style: none;
+}
+
+    #options li {
+            font-size: 28px;
+            line-height: 28px;
+    }
+
+    #options li:hover {
+            list-style: url(../Content/pointerSmall.png);
+    }
+
+#main {
+    font-family: 'Crimson Text';
     }
 
 ::after{
@@ -32,4 +66,17 @@ body {
     .foreground:hover {
         box-shadow: -2px 0px 0px rgb(255, 0, 255)
                 , 2px 2px 0px rgb(12, 12, 12);
+    }
+    .foreground:focus {
+        box-shadow: -2px 0px 0px rgb(255, 255, 0)
+                , 2px 2px 0px rgb(12, 12, 12);
+    }
+
+a{
+    color: inherit;
+    font-style: inherit;
+}
+    a:hover{
+        color: inherit;
+        text-decoration: inherit;
     }
