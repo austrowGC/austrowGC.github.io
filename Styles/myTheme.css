@@ -1,15 +1,18 @@
 body {
-    background: #202020;
     color: whitesmoke;
+    background-color: #202020;
+    background-image: url("../Content/oakland_sky.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .menu {
     width: 50%;
     padding: 1%;
-    background: no-repeat linear-gradient(#000000, #0F6464);
+    background: no-repeat linear-gradient(#000000, rgb(127, 85, 241));
     border: 4px ridge;
     border-radius: 4px;
-    margin-bottom: 2%;
     font-family: 'Overpass Mono';
     text-shadow: 2px 2px black;
 }
