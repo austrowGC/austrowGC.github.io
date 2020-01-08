@@ -1,8 +1,11 @@
 
-$(document).ready(function () {
+$(document).ready(function ()
+{
     $("#main").addClass("clearfix");
-    $("#main div").addClass("container foreground");
+    $("#main div").addClass("container glass");
+
     $("#header").addClass("menu");
-    $("#header div:not(#title)").addClass("menu pull-right");
+    $(".menu #options").addClass("menu pull-right");
+
     $("#js-disabled").prop("hidden", true);
 });
