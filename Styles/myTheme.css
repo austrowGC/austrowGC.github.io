@@ -21,21 +21,21 @@ body {
     float:right;
 }
 
-#header {
+.header {
     width: 100%;
     overflow: auto;
 }
-    #header h1 {
+    .header h1 {
         margin: none;
     }
 
-#title{
+.title{
     width: 50%;
     float: left;
     position: absolute;
 }
 
-#options ul{
+#options {
     list-style: none;
 }
 
@@ -49,6 +49,7 @@ body {
 
 #main {
     font-family: 'Crimson Text';
+    margin: 0% 1% 0% 1%;
     }
 
 ::after{
@@ -73,6 +74,14 @@ body {
         box-shadow: -2px 0px 0px rgb(255, 255, 0)
                 , 2px 2px 0px rgb(12, 12, 12);
     }
+
+.glass {
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 2px 2px 1px rgba(245, 245, 245, 0.74);
+    text-shadow: 1px 1px 1px #000000;
+
+    border-radius: 4px;
+}
 
 a{
     color: inherit;
