@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-size: 11pt;
+    font-family: "ubuntu", "arial";
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page {
+    width: 8.50in;
+    height: 11.00in;
+    padding: 0.320in;
+    margin: 0.420in auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page > div {
+    display: block;
+    margin-bottom: 6;
+}
+
+.page ul {
+    margin-top: 4;
+    margin-bottom: 8;
+}
+.page li {
+    margin-top: 4;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact li {
+    list-style: none;
+    display: inline;
+    margin-right: .2in;
+}
+
+.skills {
+    clear: both;
+}
+
+.skills div {
+    float: left;
+    display: block;
+    width: 50%;
+    height: inherit;
+    padding-top: .04in;
+    padding-left: .06in;
+    border-top: 1px solid #aeaeae;
+    border-left: 1px solid #aeaeae;
+}
+
+.skills ul,
+.experience ul,
+.education ul {
+    padding-left: .2in;
+    list-style: circle;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        width: 8.50in;
+        height: 11.00in;
+    }
+    img {
+        color: #ffffff;
+    }
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+    .no-print {
+        display: none;
+    }
+    .data {
+        background: initial;
+    }
+}
