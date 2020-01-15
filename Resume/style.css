@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-    font-size: 11pt;
+    /* font-size: 0.145in; */
     font-family: "ubuntu", "arial";
 }
 h1,
@@ -31,9 +31,11 @@ h4 {
     padding: 0.320in;
     margin: 0.420in auto;
     border: 1px #D3D3D3 solid;
-    border-radius: 2px;
+    border-radius: .04in;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 11pt;
+
 }
 
 .page > div {
@@ -65,20 +67,27 @@ h4 {
 
 .skills div {
     float: left;
-    display: block;
-    width: 50%;
     height: inherit;
+    width: 100%;
     padding-top: .04in;
     padding-left: .06in;
-    border-top: 1px solid #aeaeae;
+/*     border-top: 1px solid #aeaeae;
     border-left: 1px solid #aeaeae;
-}
+ */}
 
 .skills ul,
 .experience ul,
 .education ul {
     padding-left: .2in;
-    list-style: circle;
+    list-style-type: circle;
+}
+
+.skills ul li {
+    display: inline-block;
+    white-space: no-wrap;
+}
+.skills ul li:before {
+    content: "\026AC";
 }
 
 @page {
