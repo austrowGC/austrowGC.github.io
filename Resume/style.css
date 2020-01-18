@@ -9,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-    /* font-size: 0.145in; */
-    font-family: "ubuntu", "arial";
+    font-size: 11pt;
+    font-family: "arial";
 }
 h1,
 h2,
@@ -27,9 +27,11 @@ h4 {
 
 .page {
     width: 8.50in;
-    height: 11.00in;
-    padding: 0.320in;
+    height: 12.00in;
+    min-height: 11.00in;
+    padding: 0.40in;
     margin: 0.420in auto;
+    margin-bottom: 2.00in;
     border: 1px #D3D3D3 solid;
     border-radius: .04in;
     background: white;
@@ -71,23 +73,34 @@ h4 {
     width: 100%;
     padding-top: .04in;
     padding-left: .06in;
-/*     border-top: 1px solid #aeaeae;
-    border-left: 1px solid #aeaeae;
- */}
+}
 
 .skills ul,
 .experience ul,
 .education ul {
     padding-left: .2in;
-    list-style-type: circle;
+    list-style-type: "\026AC";
 }
 
-.skills ul li {
+.experience li,
+.education li {
+    padding-left: .1in;
+    padding-right: .1in;
+}
+
+.skills li {
     display: inline-block;
+    padding-left: .05in;
     white-space: no-wrap;
 }
-.skills ul li:before {
+
+.skills li:before {
+    padding-right: .05in;
     content: "\026AC";
+}
+
+.skills .soft {
+    display: none;
 }
 
 @page {
