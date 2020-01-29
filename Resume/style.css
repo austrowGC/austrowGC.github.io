@@ -99,6 +99,10 @@ h4 {
     content: "\026AC";
 }
 
+legend {
+    font-weight: bold;
+}
+
 .skills .soft {
     display: none;
 }
