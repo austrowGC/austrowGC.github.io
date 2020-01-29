@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-    font-size: 11pt;
     font-family: "arial";
 }
 h1,
@@ -36,7 +35,7 @@ h4 {
     border-radius: .04in;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 11pt;
+    font-size: .9em;
 
 }
 
@@ -99,6 +98,10 @@ h4 {
     content: "\026AC";
 }
 
+fieldset {
+    border-style: solid none none solid;
+    border-color: #aaaaaa;
+}
 legend {
     font-weight: bold;
 }
