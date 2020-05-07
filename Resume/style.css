@@ -22,79 +22,86 @@ h4 {
     display: table;
     clear: both;
 }
-.page {
-    width: 8.50in;
-    height: 12.00in;
-    min-height: 11.00in;
-    padding: 0.40in;
-    margin: 0.420in auto;
-    margin-bottom: 2.00in;
-    border: 1px #D3D3D3 solid;
-    border-radius: .04in;
-    background: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: .9em;
+/* page */
+    .page {
+        width: 8.50in;
+        height: 12.00in;
+        min-height: 11.00in;
+        padding: 0.40in;
+        margin: 0.420in auto;
+        margin-bottom: 2.00in;
+        border: 1px #D3D3D3 solid;
+        border-radius: .04in;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: .9em;
 
-}
-.page > div {
-    display: block;
-    margin-bottom: 6;
-}
-.page ul {
-    margin-top: 4;
-    margin-bottom: 8;
-}
-.page li {
-    margin-top: 4;
-}
-.contact {
-    text-align: center;
-}
-.contact li {
-    list-style: none;
-    display: inline;
-    margin-right: .2in;
-}
-.skills {
-    clear: both;
-}
-.skills div {
-    float: left;
-    height: inherit;
-    width: 100%;
-    padding-top: .04in;
-    padding-left: .06in;
-}
-.skills ul,
-.experience ul,
-.education ul {
-    padding-left: .2in;
-    list-style-type: "\026AC";
-}
-.experience li,
-.education li {
-    padding-left: .1in;
-    padding-right: .1in;
-}
-.skills li {
-    display: inline-block;
-    padding-left: .05in;
-    white-space: no-wrap;
-}
-.skills li:before {
-    padding-right: .05in;
-    content: "\026AC";
-}
-fieldset {
-    border-style: solid none none solid;
-    border-color: #aaaaaa;
-}
-legend {
-    font-weight: bold;
-}
-.skills .soft {
-    display: none;
-}
+    }
+    .page > div {
+        display: block;
+        margin-bottom: 6;
+    }
+    .page ul {
+        margin-top: 4;
+        margin-bottom: 8;
+    }
+    .page li {
+        margin-top: 4;
+    }
+    .contact {
+        text-align: center;
+    }
+    .contact li {
+        list-style: none;
+        display: inline;
+        margin-right: .2in;
+    }
+    .skills {
+        clear: both;
+    }
+    .skills div {
+        float: left;
+        height: inherit;
+        width: 100%;
+        padding-top: .04in;
+        padding-left: .06in;
+    }
+    .skills ul,
+    .experience ul,
+    .education ul {
+        padding-left: .2in;
+        list-style-type: "\026AC";
+    }
+    .experience li,
+    .education li {
+        padding-left: .1in;
+        padding-right: .1in;
+    }
+    .skills li {
+        display: inline-block;
+        padding-left: .05in;
+        white-space: no-wrap;
+    }
+    .skills li:before {
+        padding-right: .05in;
+        content: "\026AC";
+    }
+    fieldset {
+        border-style: solid none none solid;
+        border-color: #aaaaaa;
+    }
+    legend {
+        font-weight: bold;
+    }
+    .skills .soft {
+        display: none;
+    }
+/* actions */
+    .actions {
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+    }
 @page {
     size: A4;
     margin: 0;
