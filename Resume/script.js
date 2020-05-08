@@ -1,9 +1,7 @@
-console.log("loading script.js...");
-console.log(tags("a"));
+// console.log("loading script.js...");
+const tags = name => document.getElementsByTagName(name);
+const print = () => window.print();
+document.querySelector("#print").addEventListener("click", print);
 
-
-console.log("finished loading script.js");
-
-function tags(tagName) {
-    document.getElementsByTagName(tagName);
-}
+// console.log(tags("a"));
+// console.log("finished loading script.js");
