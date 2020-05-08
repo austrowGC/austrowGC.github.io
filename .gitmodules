@@ -1,0 +1,3 @@
+[submodule "spool"]
+	path = spool
+	url = https://github.com/austrowGC/spool
