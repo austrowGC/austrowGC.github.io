@@ -8,7 +8,7 @@ body {
 }
 
 .menu {
-    width: 50%;
+    max-width: 600px;
     padding: 1%;
     background: no-repeat linear-gradient(#000000, rgb(127, 85, 241));
     border: 4px ridge;
@@ -30,27 +30,32 @@ body {
     }
 
 .title{
-    width: 50%;
     float: left;
     position: absolute;
 }
 
 #options {
+    width: inherit;
     list-style: none;
 }
 
     #options li {
-            font-size: 28px;
+        font-size: 28px;
     }
 
     #options li:hover, #options li:focus {
-            list-style: url(../Content/pointerSmall.png);
+        list-style: url(../Content/pointerSmall.png);
+    }
+
+    #options h2 {
+        color: #808080;
+        text-decoration: underline;
     }
 
 #main {
     font-family: 'Crimson Text';
     margin: 0% 1% 0% 1%;
-    }
+}
 
 ::after{
     display:block;
