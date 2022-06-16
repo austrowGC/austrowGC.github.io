@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "development has received a push"
-        echo "ref: ${{ github.ref }}"
-        echo "sha: ${{ github.sha }}"
+          echo "development has received a push"
+          echo "ref: ${{ github.ref }}"
+          echo "sha: ${{ github.sha }}"
