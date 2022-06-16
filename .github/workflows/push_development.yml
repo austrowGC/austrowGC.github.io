@@ -6,10 +6,32 @@ on:
       - 'development'
 
 jobs:
-  message:
+  data:
     runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.tag.outputs.name }}
     steps:
-      - run: |
+      - name: Information readout
+        run: |
           echo "development has received a push"
           echo "ref: ${{ github.ref }}"
           echo "sha: ${{ github.sha }}"
+      - name: generate tag
+        id: tag
+        run: |
+          date=$(date +%Y.%m.%d)
+          tag="${date}-${commit:0:8}"
+          echo "generated tag: '${tag}'"
+          echo "::set-output name=name::${tag}"
+        env:
+          commit: ${{ github.sha }}
+    tagging:
+      needs: data
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Tag HEAD and push
+          run: |
+            git tag ${{ needs.data.outputs.tag }}
+            git push --tags
