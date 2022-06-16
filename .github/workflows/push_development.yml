@@ -1,0 +1,17 @@
+name: Push to development
+
+on:
+  push:
+    branches:
+      - 'development'
+      
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+        echo
+        echo "development has received a push"
+        echo "ref: ${{ github.ref }}"
+        echo "sha: ${{ github.sha }}"
+        echo
