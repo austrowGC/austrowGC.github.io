@@ -1,0 +1,15 @@
+name: Push version tags
+
+on:
+  push:
+    tags:
+      - 'v**'
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "push to tag"
+          echo "ref: ${{ github.ref }}"
+          echo "sha: ${{ github.sha }}"
