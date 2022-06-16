@@ -25,13 +25,13 @@ jobs:
           echo "::set-output name=name::${tag}"
         env:
           commit: ${{ github.sha }}
-    tagging:
-      needs: data
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v3
-        - name: Tag HEAD and push
-          run: |
-            git tag ${{ needs.data.outputs.tag }}
-            git push --tags
+  tagging:
+    needs: data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Tag HEAD and push
+        run: |
+          git tag ${{ needs.data.outputs.tag }}
+          git push --tags
