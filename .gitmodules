@@ -1,3 +1,6 @@
 [submodule "spool"]
 	path = spool
 	url = https://github.com/austrowgc/spool
+	update = checkout
+	ignore = dirty
+	fetchRecursiveSubmodules = true
