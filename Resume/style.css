@@ -25,7 +25,7 @@ h4 {
 /* page */
     .page {
         width: 8.50in;
-        height: 12.00in;
+        height: 12in;
         min-height: 11.00in;
         padding: 0.40in;
         margin: 0.420in auto;
@@ -39,11 +39,11 @@ h4 {
     }
     .page > div {
         display: block;
-        margin-bottom: 6;
+        margin-bottom: 5;
     }
     .page ul {
         margin-top: 4;
-        margin-bottom: 8;
+        margin-bottom: 6;
     }
     .page li {
         margin-top: 4;
@@ -66,7 +66,9 @@ h4 {
         padding-top: .04in;
         padding-left: .06in;
     }
-    .skills ul,
+    .skills ul {
+        padding-left:0;
+    }
     .experience ul,
     .education ul {
         padding-left: .2in;
@@ -89,6 +91,8 @@ h4 {
     fieldset {
         border-style: solid none none solid;
         border-color: #aaaaaa;
+        margin-top:0; margin-bottom:0;
+        padding-top:0; padding-bottom:0;
     }
     legend {
         font-weight: bold;
