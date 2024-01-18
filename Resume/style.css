@@ -71,12 +71,12 @@ h4 {
     }
     .experience ul,
     .education ul {
-        padding-left: .2in;
+        padding-left: .1in;
         list-style-type: "\026AC";
     }
     .experience li,
     .education li {
-        padding-left: .1in;
+        padding-left: .04in;
         padding-right: .1in;
     }
     .skills li {
@@ -90,9 +90,18 @@ h4 {
     }
     fieldset {
         border-style: solid none none solid;
-        border-color: #aaaaaa;
+        border-image:
+            linear-gradient(
+                to bottom,
+                gray,
+                rgba(0,0,0,0)
+            ) 1;
         margin-top:0; margin-bottom:0;
-        padding-top:0; padding-bottom:0;
+        padding-top:0; padding-bottom:1em;
+    }
+    .location,
+    .duration {
+        padding-left: 0.2em;
     }
     legend {
         font-weight: bold;
