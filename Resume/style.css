@@ -50,13 +50,8 @@ h4 {
     .contact {
         display: flex;
         justify-content: space-evenly;
-        /* display: block; */
-        /* display: inline-block; */
-        /* border-bottom: 0.11em solid #000 */
     }
     .contact h1 {
-        /* justify-self: flex-start; */
-        /* float: left; */
         display: inline-flex;
         margin-right: 2%;
     }
@@ -64,11 +59,9 @@ h4 {
         font-size: 0.80em;
         display: inline-flex;
         margin-left: 2%;
-        /* align-self: flex-end; */
     }
     .contact li {
         list-style: none;
-        /* justify-items: left; */
         display: inline;
         margin-right: .2in;
     }
@@ -94,7 +87,18 @@ h4 {
     .education li {
         padding-left: .04in;
         /* padding-right: .1in; */
-    } 
+    }
+    .experience .item {
+        /* margin-left: .05in; */
+        padding-left: .1in;
+        border-left: 1px solid grey
+    }
+    .experience .technology {
+        margin-bottom: 0
+    }
+    .experience .brief {
+        margin-top: 0
+    }
     .employment > h3,
     .employment > .location {
         display: inline-flex;
@@ -119,12 +123,13 @@ h4 {
                 rgba(0,0,0,0)
             ) 1; */
         /* margin: 0 0 0 0; */
-        padding: 0 0 1em 0;
+        padding: 0;
     }
     legend {
         display: inline-flex;
         justify-content: space-between;
         white-space: nowrap;
+        padding: 0;
     }
     .location, .duration {
         display: inline-flex;
