@@ -53,12 +53,12 @@ h4 {
     }
     .contact h1 {
         display: inline-flex;
-        margin-right: 2%;
+        margin-right: 0.1in;
     }
     .contact .method {
         font-size: 0.80em;
         display: inline-flex;
-        margin-left: 2%;
+        margin-left: 0.1in;
     }
     .contact li {
         list-style: none;
@@ -91,18 +91,18 @@ h4 {
     .experience .item {
         /* margin-left: .05in; */
         padding-left: .1in;
-        border-left: 1px solid grey
+        border-left: 0.02in solid black;
+        margin-top: 0.05in;
+        margin-bottom: 0.1in;
     }
-    .experience .technology {
-        margin-bottom: 0
-    }
-    .experience .brief {
-        margin-top: 0
+    .technology, .brief {
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .employment > h3,
     .employment > .location {
         display: inline-flex;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.01in;
     }
     .skills li {
         display: inline-block;
@@ -133,7 +133,7 @@ h4 {
     }
     .location, .duration {
         display: inline-flex;
-        margin-left: 2%;
+        margin-left: 0.1in;
     }
     .skills .soft {
         display: none;
@@ -141,8 +141,8 @@ h4 {
 /* actions */
     .actions {
         position: fixed;
-        bottom: 1em;
-        right: 1em;
+        bottom: 0.1in;
+        right: 0.1in;
     }
 @page {
     size: A4;
