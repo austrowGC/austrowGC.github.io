@@ -25,57 +25,6 @@
                 </p>
             </div>
 
-            <div class="group skills">
-                <h2>Competence</h2>
-                <ul class="order-any">
-                    <li>SDLC</li>
-                    <li>CI/CD</li>
-                    <li>Agile</li>
-                    <li>DevOps</li>
-                    <li>Automation</li>
-                    <li>Git Flow</li>
-                    <li>Git Ops</li>
-                    <li>IaC</li>
-                    <li>TDD</li>
-                    <li>MVC</li>
-                    <li>REST</li>
-                    <li>OOP</li>
-                    <li>FP</li>
-                </ul>
-                <ul class="order-any" hidden>
-                    <li>Git</li>
-                    <li>Github Actions</li>
-                    <li>Terraform</li>
-                    <li>Ansible</li>
-                    <li>Docker</li>
-                    <li>AWS</li>
-                    <li>ECR</li>
-                    <li>ECS</li>
-                    <li>SSM</li>
-                    <li>Parameter Store</li>
-                    <li>Azure</li>
-                    <li>Firebase</li>
-                    <li>Python</li>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                    <li>Livewire</li>
-                    <li>Tailwind</li>
-                    <li>JavaScript</li>
-                    <li>Node</li>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>Kafka</li>
-                    <li>Datadog</li>
-                    <li>Cloudwatch</li>
-                    <li>Linux</li>
-                    <li>Mac</li>
-                    <li>Windows</li>
-                    <li>Bash</li>
-                    <li>Powershell</li>
-                    <li>Excel</li>
-
-                </ul>
-            </div>
 
             <div class="group experience">
                 <h2>Experience</h2>
@@ -88,70 +37,48 @@
                             <h4>DevOps Engineer</h4>
                             <div class="duration">January 2022 - January 2024</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                Python | Apache Kafka | AWS MSK | AWS EC2 | Bash | Git
-                            </p>
-                            <p class="brief">
-                                Collaborate in lifecycle of kafka producer, implement topics and data types to synchronize data across
-                                mobile and traditional web applications.
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p class="technology">
-                                Terraform | AWS Codepipeline | GitHub Actions | Bash | AWS ECS | AWS VPC | DataDog | Firebase | AWS ElastiCache 
-                            </p>
-                            <p class="brief">
-                                Design, implement, maintain, and collaborate in repository management, CI/CD automation, log monitoring, caching,
-                                and infrastructure as code for numerous cloud based web applications.
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p class="technology">
-                                Git | Bash | AWS EC2 | AWS RDS | AWS IAM | AWS SSM | Jira | PagerDuty | CloudWatch | DataDog
-                            </p>
-                            <p class="brief">
-                                Participate in system operations and on-call rotation, handle change and service triage and implementation,
-                                exposing monitoring tools and system metrics,
-                                application deployment scripting and running; git ops for several applications, secrets storage and retrieval.
-                            </p>
-                        </div>
-
+                        <ul>
+                            <li>Implement Apache Kafka producer in python, hosting on AWS EC2, logging through CloudWatch and persisted in S3.
+                                Participated in system and topics/messages data type design.
+                            </li>
+                            <li>Develop and integrate Terraform modules for AWS hosted networks including VPC, ELB, ALB for system networking and load balancing;
+                                EC2, ECS, for hosting applications; ECR, S3, for artifact and asset storage; RDS, ElastiCache, MSK, for data storage.
+                            </li>
+                            <li>Implement automation of continuous integration, testing, and building based on triggers defined in GitHub actions and CodePipeline with CodeBuild,
+                                producing image and assets artifacts to ECR and S3.
+                            </li>
+                            <li>Orchestrate release deployment and schema migrations through multiple environments including development, testing, staging, and production with hosting
+                                facilitated by AWS EC2, ECS, Fargate, Firebase, and Azure Container Apps, and jobs triggered by GitHub actions or CodePipeline.
+                            </li>
+                            <li>Describe and manage rulesets for branch protection and integration across organization GitHub repositories with Terraform.
+                            </li>
+                            <li>Manage application logging and metrics with CloudWatch, DataDog; alerting with PagerDuty and Slack integrations; feature, bug, and change management
+                                and triage with Jira.
+                            </li>
+                            <li>Maintain and utilize services rendered by Lambdas, triggered by EventBridge and SMS, Node JS and Python environments, e.g. for detecting and reacting to
+                                instance resource usage metrics.
+                            </li>
+                            <li>Manage identities, roles, and access with IAM; manage configurations and secrets storage and retrieval with SSM Secrets Manager and Parameter Store.
+                            </li>
+                            <li>Troubleshoot network and service connectivity using Bash, AWS cli, and collaboration with more senior team members.
+                            </li>
+                        </ul>
                     </fieldset>
                     <fieldset class="position">
                         <legend >
                             <h4>Application Developer</h4>
                             <div class="duration">November 2020 - January 2022</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                PHP | Laravel | Tailwind | Valet | Livewire | JavaScript | SQL | Eloquent ORM
-                            </p>
-                            <p class="brief">
-                                Collaborate and lead in lifecycle of internal web application for reporting client data,
-                                research and implement best practices, data analysis and aggregation techniques to meet evolving
-                                business needs.
-                            </p>
-                        </div>
-                        <div class="item">
-                            <p class="technology">
-                                PHP | Silex | SQL | Docker | JavaScript | JQuery
-                            </p>
-                            <p class="brief">
-                                Participate in SDLC of typical PHP monolith, research and advocate for adoption of modern best practices and development techniques.
-                                Implement agile team methodologies to balance work on features, bug fixes, and software quality. 
-                            </p>
-                        </div>
-                        <ul class="deliverables" hidden>
-                            <li>
-                                Communicate, produce, maintain quality software integration and delivery processes involving containerization, testing.  
+                        <ul>
+                            <li>Lead and collaborate in Agile scrum development of Laravel web application, involving Eloquent ORM and SQL for data layer management,
+                                Tailwind for styling, Livewire and JavaScript for front end async data refresh, Valet for local environment configuration and hosting,
+                                asset hosting in S3, collaborate in facilitating bash scripting to manage release delivery to EC2.
                             </li>
-                            <li>
-                                Research, implement, maintain dockerfile and compose files for multiple repositories.
+                            <li>Collaborate Agile scrum development process of traditional PHP web application implementing a modified Silex/Symfony framework,
+                                JavaScript and JQuery for client side form functions and async data refresh, data persistence in RDS hosted MariaDB, asset storage and retrieval
+                                in S3.
                             </li>
-                            <li>
-                                Research, advocate for system and process alterations to improve executive and client confidence in products and services.  
-                            </li>
+                            <li>Create and maintain docker and compose files for PHP web applications and systems to help mitigate growht pains in development environments.</li>
                         </ul>
                     </fieldset>
                     <fieldset class="position">
@@ -159,14 +86,10 @@
                             <h4>Consultant & Operations Specialist</h4>
                             <div class="duration">September 2020 - November 2020</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                PHP | Laravel | Tailwind | JavaScript | SQL | Eloquent ORM | JQuery | DataTables
-                            </p>
-                            <p class="brief">
-                                Communicate with key business resources to initialize, deploy, and control access to internal data reporting web application.
-                            </p>
-                        </div>
+                        <ul>
+                            <li>Communicate with key business resources to design data aggregation and report presentations in Laravel web application.</li>
+                            <li>Facilitate development and execution of adhoc business tasks utilizing PHP and Bash scripts.</li>
+                        </ul>
                     </fieldset>
                 </div>
                 <div class="employment">
@@ -177,15 +100,13 @@
                             <h4>Full Stack Web Developer</h4>
                             <div class="duration">August 2018 - March 2020</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                PHP | JavaScript | JQuery | CSS | SQL | Chromium
-                            </p>
-                            <p class="brief">
-                                Communicate across all levels of small organization and with clients to understand and implement business needs
-                                and supporting tools for proprietary CRM and lead-management web application. Assist server and database maintenance.
-                            </p>
-                        </div>
+                        <ul>
+                            <li>Participate small business environment to develop and deliver feature and bug fix releases, SQL database schema migrations
+                                for PHP web application, CSS styling, JavaScript and JQuery for client side functions.
+                            </li>
+                            <li>Utilize Bash commands and SSH tools to manage on-prem hosting environments and releases.
+                            </li>
+                        </ul>
                     </fieldset>
                 </div>
                 <div class="employment" >
@@ -196,13 +117,20 @@
                             <h4>Data Analyst</h4>
                             <div class="duration">January 2017 - January 2018</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                Excel | SQL | Power BI | Python | Pandas
-                            </p>
-                            <p class="brief">
-                                Communicate with clients and key business resources to design marketing tests and present findings, manual ETL.
-                            </p>
+                        <ul>
+                            <li>Participate in survey design, data presentation with Power BI and Excel, communicate statistical and methodological language
+                                to a avariety of audiences internal and external.
+                            </li>
+                        </ul>
+                        <div class="items" hidden>
+                            <div class="item">
+                                <p class="technology">
+                                    Excel | SQL | Power BI | Python | Pandas
+                                </p>
+                                <p class="brief">
+                                    Communicate with clients and key business resources to design marketing tests and present findings, manual ETL.
+                                </p>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="position">
@@ -210,14 +138,12 @@
                             <h4 class="title">Customer Support Lead</h4>
                             <div class="duration">September 2015 - January 2017</div>
                         </legend>
-                        <div class="item">
-                            <p class="technology">
-                                Excel | SQL 
-                            </p>
-                            <p class="brief">
-                                Data entry, customer support, client onboarding, support training, process research and documentation.
-                            </p>
-                        </div>
+                        <ul>
+                            <li>Download data sets and treat formatting in Excel, upload to database using inhouse application.
+                                Field client communications, particularly regarding data upload, reporting, metrics, and application usage.
+                            </li>
+                            <li>Lead small support team, communicate methods and procedures, and relay progress and status to account managers and executives.</li>
+                        </ul>
                     </fieldset>
 
                 </div>    
