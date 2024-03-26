@@ -36,16 +36,20 @@ h4 {
         font-size: .80em;
 
     }
+    hr {
+        margin: 0;
+    }
     .page > div {
         display: block;
-        margin-bottom: 5;
     }
     .page ul {
-        margin-top: 4;
-        margin-bottom: 6;
+        margin-top: 1;
+        margin-bottom: 1;
+        /* margin-top: 4; */
+        /* margin-bottom: 6; */
     }
     .page li {
-        margin-top: 4;
+        /* margin-top: 4; */
     }
     .contact {
         display: flex;
